@@ -18,14 +18,11 @@ public class MainActivity extends AppCompatActivity {
         mainButton = findViewById(R.id.toggleButton);
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
-        mainButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    bluetoothAdapter.enable();
-                } else {
-                    bluetoothAdapter.disable();
-                }
+        mainButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                bluetoothAdapter.enable();
+            } else {
+                bluetoothAdapter.disable();
             }
         });
     }
