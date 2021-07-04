@@ -24,9 +24,8 @@ public class MainActivity extends AppCompatActivity {
                 if (isChecked) {
                     bluetoothAdapter.enable();
                 } else {
-
+                    bluetoothAdapter.disable();
                 }
-
             }
         });
     }
