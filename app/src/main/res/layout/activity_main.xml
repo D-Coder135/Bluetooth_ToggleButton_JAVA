@@ -12,6 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:textOn="Bluetooth ON"
+        android:textOff="Bluetooth OFF"
+
         android:layout_alignParentEnd="true"
         android:layout_marginTop="240dp"
         android:layout_marginEnd="157dp"
