@@ -23,7 +23,10 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     bluetoothAdapter.enable();
+                } else {
+
                 }
+
             }
         });
     }
